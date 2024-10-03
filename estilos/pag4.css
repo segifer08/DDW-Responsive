@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 15vh, 75vh, 10vh;
+        gap: 0px, 0px;
+        grid-template-areas: "header"
+        "main"
+        "footer";
+    }
+
+    :root{
+        font-size: 14px;
+    }
+
+    header {
+        height: 9vh;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 16vw, 16vw, 16vw, 16vw, 16vw, 16vw;
+        grid-template-rows: 50%, 50%;
+        grid-template-areas: "pagprincipal pag2 pag3" 
+        "pag4 pag5 pag6";
+        background-color: lightseagreen;
+    }
+
+    #tPag{
+        margin-left: 3%;
+        margin-top: 3%;
+        font-style: italic;
+        font-weight: bold;
+        color: black;
+    }
+
+    .links{
+        margin-left: 3%;
+        margin-top: 3%;
+        text-decoration: none;
+        color: black;
+    }
+
+    .links :hover{
+        margin-left: 3%;
+        margin-top: 3%;
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
+    }
+
+    main{
+        height: 80vh;
+        background-color: lightgray;
+        text-align: center;
+        align-content: center;
+    }
+
+
+    #titulo{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    #texto{
+        padding-bottom: 1rem;
+    }
+
+    #imagen{
+        width: 100vw;
+        height: 65vh;
+    }
+
+    footer{
+        height: 11vh;
+        grid-area: footer;
+        background-color: lightseagreen;
+        text-align: center;
+        align-content: center;
+    }
+
+    span{
+        font-weight: bold;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 15vh, 75vh, 10vh;
+        gap: 0px, 0px;
+        grid-template-areas: "header"
+        "main"
+        "footer";
+    }
+
+    :root{
+        font-size: 16px;
+    }
+
+    header {
+        height: 9vh;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 16vw, 16vw, 16vw, 16vw, 16vw, 16vw;
+        grid-template-areas: "pagprincipal pag2 pag3 pag4 pag5 pag6";
+        background-color: lightseagreen;
+        align-content: center;
+        text-align: center;
+    }
+
+    .links{
+        text-decoration: none;
+        color: black;
+    }
+
+    .links :hover{
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
+    }
+
+    #tPag{
+        margin-left: 3%;
+        margin-top: 3%;
+        font-style: italic;
+        font-weight: bold;
+        color: black;
+    }
+
+    main{
+        height: 80vh;
+        background-color: lightgray;
+        text-align: center;
+        align-content: center;
+    }
+
+
+    #titulo{
+        padding-top: 0.5rem;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    #texto{
+        padding-bottom: 1rem;
+    }
+
+    #imagen{
+        width: 100vw;
+        height: 65vh;
+    }
+
+    footer{
+        height: 11vh;
+        grid-area: footer;
+        background-color: lightseagreen;
+        text-align: center;
+        align-content: center;
+    }
+
+    span{
+        font-weight: bold;
+    }
+}
