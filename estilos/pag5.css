@@ -3,12 +3,158 @@
     padding: 0px;
     box-sizing: border-box;
 }
-@media screen and (max-width: 768){
+@media screen and (max-width: 768px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 15vh, 75vh, 10vh;
+        gap: 0px, 0px;
+        grid-template-areas: "header"
+        "main"
+        "footer";
+    }
 
     :root{
         font-size: 14px;
     }
+
+    header {
+        height: 9vh;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 16vw, 16vw, 16vw, 16vw, 16vw, 16vw;
+        grid-template-rows: 1fr, 1fr;
+        grid-template-areas: "pagprincipal pag2 pag3" 
+        "pag4 pag5 pag6";
+        background-color: lightseagreen;
+    }
+
+    .links{
+        margin-left: 3%;
+        margin-top: 3%;
+        text-decoration: none;
+        color: black;
+    }
+
+    .links :hover{
+        margin-left: 3%;
+        margin-top: 3%;
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
+    }
+
+    #tPag{
+        margin-left: 3%;
+        margin-top: 3%;
+        font-style: italic;
+        font-weight: bold;
+        color: black;
+    }
+
+    main{
+        height: 80vh;
+        text-align: center;
+        background-color: lightgray;
+    }
+
+    section{
+        height: 20vh;
+        margin-top: 3%;
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+        align-content: center;
+        background-color: white;
+        border-radius: 10%;
+    }
+
+    .texto{
+        padding-bottom: 0.5rem;
+    }
+
+    .button{
+        padding:5px;
+        text-decoration: none;
+        background-color: blue;
+        color: white;
+        border-radius: 8%;
+    }
+
+    .button :hover{
+        padding: 3px;
+        text-decoration: underline;
+        background-color: white;
+        color: blue;
+        border-radius: 8%;
+    }
+
+    footer{
+        height: 11vh;
+        grid-area: footer;
+        background-color: lightseagreen;
+        text-align: center;
+        align-content: center;
+    }
+
+    span{
+        font-weight: bold;
+    }
 }
-@media screen and (min-width: 769) and (max-width: 1024){
-    
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 15vh, 75vh, 10vh;
+        gap: 0px, 0px;
+        grid-template-areas: "header"
+        "main"
+        "footer";
+    }
+
+    :root{
+        font-size: 16px;
+    }
+
+    header {
+        height: 9vh;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 16vw, 16vw, 16vw, 16vw, 16vw, 16vw;
+        grid-template-areas: "pagprincipal pag2 pag3 pag4 pag5 pag6";
+        background-color: lightseagreen;
+        align-content: center;
+        text-align: center;
+    }
+
+    .links{
+        text-decoration: none;
+        color: black;
+    }
+
+    .links :hover{
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
+    }
+
+    #tPag{
+        font-style: italic;
+        font-weight: bold;
+        color: black;
+    }
+
+    footer{
+        height: 11vh;
+        grid-area: footer;
+        background-color: lightseagreen;
+        text-align: center;
+        align-content: center;
+    }
+
+    span{
+        font-weight: bold;
+    }
 }
