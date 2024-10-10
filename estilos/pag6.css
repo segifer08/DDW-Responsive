@@ -53,6 +53,53 @@
         color: black;
     }
 
+    main{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1.5fr;
+        grid-template-areas: 
+        "titulo titulo"
+        "img texto";
+        background-color: lightgray;
+        text-align: center;
+    }
+
+    h1{
+        grid-area: titulo;
+        align-content: center;
+        font-size: 2.5rem;
+    }
+
+    .img{
+        grid-area: img;
+    }
+
+    #tamaño{
+        height: 100%;
+        width: 100%;
+    }
+
+    .texto{
+        grid-area: texto;
+        align-content: center;
+        padding-left: 8%;
+        text-align: left;
+    }
+
+    section{
+        padding-bottom: 15%;
+    }
+
+    h4{
+        font-size: 1.4rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+        padding-top: 0.5rem;
+    }
+
     footer{
         height: 11vh;
         grid-area: footer;

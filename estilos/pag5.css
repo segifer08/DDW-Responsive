@@ -60,8 +60,8 @@
     }
 
     section{
-        height: 20vh;
-        margin-top: 3%;
+        height: 21vh;
+        margin-top: 5%;
         margin-left: 15%;
         margin-right: 15%;
         text-align: center;
@@ -70,8 +70,8 @@
         border-radius: 10%;
     }
 
-    .texto{
-        padding-bottom: 0.5rem;
+    .textoS{
+        padding-bottom: 6%;
     }
 
     .button{
@@ -83,7 +83,7 @@
     }
 
     .button :hover{
-        padding: 3px;
+        padding: 5px;
         text-decoration: underline;
         background-color: white;
         color: blue;
@@ -144,6 +144,69 @@
         font-style: italic;
         font-weight: bold;
         color: black;
+    }
+
+    main{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-areas: "s1 s2 s3";
+        align-items: center;
+        background-color: lightgray;
+    }
+
+    section{
+        height: 40vh;
+        margin-top: 3%;
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: center;
+        align-content: center;
+        background-color: white;
+        border-radius: 10%;
+    }
+
+    #s1{
+        grid-area: s1;
+    }
+
+    #s2{
+        grid-area: s2;
+    }
+
+    #s3{
+        grid-area: s3;
+    }
+
+    .textoS{
+        padding-bottom: 8%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    .item{
+        width: 20%;
+        height: 20%;
+    }
+
+    .button{
+        padding: 5px;
+        text-decoration: none;
+        background-color: blue;
+        color: white;
+        border-radius: 8%;
+    }
+
+    .button :hover{
+        padding: 5px;
+        text-decoration: underline;
+        background-color: white;
+        color: blue;
+        border-radius: 8%;
     }
 
     footer{
