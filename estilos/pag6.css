@@ -132,7 +132,7 @@
         height: 9vh;
         grid-area: header;
         display: grid;
-        grid-template-columns: 16vw, 16vw, 16vw, 16vw, 16vw, 16vw;
+        grid-template-columns: 16vw 16vw 16vw 16vw 16vw 16vw;
         grid-template-areas: "pagprincipal pag2 pag3 pag4 pag5 pag6";
         background-color: lightseagreen;
         align-content: center;
@@ -156,8 +156,57 @@
         color: black;
     }
 
+    main{
+        height: 88vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1.5fr;
+        grid-template-areas: 
+        "titulo titulo"
+        "img texto";
+        background-color: lightgray;
+        text-align: center;
+    }
+
+    h1{
+        grid-area: titulo;
+        align-content: center;
+        font-size: 2.5rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .img{
+        grid-area: img;
+    }
+
+    #tamaño{
+        height: 85%;
+        width: 100%;
+    }
+
+    .texto{
+        grid-area: texto;
+        align-content: center;
+        padding-left: 8%;
+        text-align: left;
+    }
+
+    section{
+        padding-bottom: 15%;
+    }
+
+    h4{
+        font-size: 1.4rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+        padding-top: 0.5rem;
+    }
+
     footer{
-        height: 11vh;
+        height: 13vh;
         grid-area: footer;
         background-color: lightseagreen;
         text-align: center;

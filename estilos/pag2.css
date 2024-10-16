@@ -165,12 +165,12 @@
     #imagen{
         grid-area: imagen;
         width: 150%;
-        height: 80%;
+        height: 70vh;
     }
 
     #texto{
         grid-area: texto;
-        padding-left: 20%;
+        padding-left: 30%;
         padding-right: 5%;
         padding-top: 25%;
     }
